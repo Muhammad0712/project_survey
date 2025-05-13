@@ -3,6 +3,7 @@ import { SequelizeModule } from '@nestjs/sequelize';
 import { AdminsModule } from './admins/admins.module';
 import { Admin } from './admins/models/admin.models';
 import { ConfigModule } from '@nestjs/config';
+import { AuthModule } from './auth/auth.module';
 
 
 @Module({
@@ -21,6 +22,7 @@ import { ConfigModule } from '@nestjs/config';
       logging: false,
     }),
     AdminsModule,
+    AuthModule,
   ],
   controllers: [],
   providers: [],

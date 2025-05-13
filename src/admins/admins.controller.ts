@@ -31,4 +31,9 @@ export class AdminsController {
   remove(@Param('id') id: string) {
     return this.adminsService.remove(+id);
   }
+
+  @Post("is-active")
+  updateIsActive(@Param("id") id: string, @Body() is_active: boolean) {
+    return this.adminsService.updateIsActive(+id, is_active)
+  }
 }

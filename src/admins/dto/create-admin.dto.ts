@@ -7,7 +7,6 @@ export class CreateAdminDto {
     email: string;
     password: string;
     refresh_token: string;
-    activation_link: string;
     is_active: boolean;
 }
 
